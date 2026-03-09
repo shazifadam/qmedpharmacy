@@ -45,7 +45,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: var(--space-20) var(--space-4) var(--space-16);
+    padding: var(--space-8) var(--space-4) var(--space-16);
     overflow: hidden;
   }
 
