@@ -4,14 +4,12 @@ import styles from './ContactDetails.module.css'
 
 const details = [
   {
-    icon: '📍',
     label: 'Our Location',
     primary: 'QMED Pharmacy',
     secondary: 'Malé, Republic of Maldives',
     note: null,
   },
   {
-    icon: '📧',
     label: 'Email Us',
     primary: 'info@qmedpharmacy.mv',
     secondary: null,
@@ -34,7 +32,6 @@ export default function ContactDetails() {
           {details.map((d) => (
             <StaggerItem key={d.label}>
               <div className={styles.detailCard}>
-                <span className={styles.icon}>{d.icon}</span>
                 <div className={styles.detailContent}>
                   <span className={styles.detailLabel}>{d.label}</span>
                   <span className={styles.detailPrimary}>{d.primary}</span>
