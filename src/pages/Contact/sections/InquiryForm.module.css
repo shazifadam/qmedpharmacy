@@ -88,3 +88,21 @@
     grid-template-columns: 1fr;
   }
 }
+
+.successMsg {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-heading);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+  text-align: center;
+}
+
+.errorMsg {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: #c0392b;
+  margin-top: calc(var(--stack-sm) * -1);
+}

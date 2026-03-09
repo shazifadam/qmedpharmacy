@@ -33,5 +33,21 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Netlify Forms bot detection — hidden static copies required for React SPAs -->
+    <div style="display:none">
+      <form name="contact" netlify>
+        <input name="name" />
+        <input name="email" />
+        <input name="subject" />
+        <textarea name="message"></textarea>
+      </form>
+      <form name="partnership" netlify>
+        <input name="name" />
+        <input name="company" />
+        <input name="country" />
+        <textarea name="message"></textarea>
+      </form>
+    </div>
   </body>
 </html>

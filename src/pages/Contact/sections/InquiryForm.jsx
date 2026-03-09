@@ -5,6 +5,7 @@ import styles from './InquiryForm.module.css'
 
 export default function InquiryForm() {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' })
+  const [status, setStatus] = useState('idle') // idle | sending | success | error
 
   function handleChange(e) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }))
@@ -12,8 +13,18 @@ export default function InquiryForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    alert('Thank you for your message! We will respond within 1–2 business days.')
-    setForm({ name: '', email: '', subject: '', message: '' })
+    setStatus('sending')
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ 'form-name': 'contact', ...form }).toString(),
+    })
+      .then(() => {
+        setStatus('success')
+        setForm({ name: '', email: '', subject: '', message: '' })
+      })
+      .catch(() => setStatus('error'))
   }
 
   return (
@@ -32,65 +43,86 @@ export default function InquiryForm() {
         </FadeInUp>
 
         <FadeInUp delay={0.25}>
-          <form className={styles.form} onSubmit={handleSubmit} noValidate>
-            <div className={styles.row}>
+          {status === 'success' ? (
+            <p className={styles.successMsg}>
+              ✓ Message sent! We will respond within 1–2 business days.
+            </p>
+          ) : (
+            <form
+              className={styles.form}
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              onSubmit={handleSubmit}
+              noValidate
+            >
+              <input type="hidden" name="form-name" value="contact" />
+
+              <div className={styles.row}>
+                <div className={styles.formGroup}>
+                  <label className={styles.label} htmlFor="c-name">Name</label>
+                  <input
+                    id="c-name"
+                    name="name"
+                    type="text"
+                    className={styles.input}
+                    placeholder="Your full name"
+                    value={form.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className={styles.formGroup}>
+                  <label className={styles.label} htmlFor="c-email">Email</label>
+                  <input
+                    id="c-email"
+                    name="email"
+                    type="email"
+                    className={styles.input}
+                    placeholder="your@email.com"
+                    value={form.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
+
               <div className={styles.formGroup}>
-                <label className={styles.label} htmlFor="c-name">Name</label>
+                <label className={styles.label} htmlFor="c-subject">Subject</label>
                 <input
-                  id="c-name"
-                  name="name"
+                  id="c-subject"
+                  name="subject"
                   type="text"
                   className={styles.input}
-                  placeholder="Your full name"
-                  value={form.name}
+                  placeholder="What is this regarding?"
+                  value={form.subject}
                   onChange={handleChange}
                   required
                 />
               </div>
+
               <div className={styles.formGroup}>
-                <label className={styles.label} htmlFor="c-email">Email</label>
-                <input
-                  id="c-email"
-                  name="email"
-                  type="email"
-                  className={styles.input}
-                  placeholder="your@email.com"
-                  value={form.email}
+                <label className={styles.label} htmlFor="c-message">Message</label>
+                <textarea
+                  id="c-message"
+                  name="message"
+                  className={[styles.input, styles.textarea].join(' ')}
+                  placeholder="Write your message here..."
+                  value={form.message}
                   onChange={handleChange}
                   required
                 />
               </div>
-            </div>
 
-            <div className={styles.formGroup}>
-              <label className={styles.label} htmlFor="c-subject">Subject</label>
-              <input
-                id="c-subject"
-                name="subject"
-                type="text"
-                className={styles.input}
-                placeholder="What is this regarding?"
-                value={form.subject}
-                onChange={handleChange}
-                required
-              />
-            </div>
+              {status === 'error' && (
+                <p className={styles.errorMsg}>Something went wrong. Please try again.</p>
+              )}
 
-            <div className={styles.formGroup}>
-              <label className={styles.label} htmlFor="c-message">Message</label>
-              <textarea
-                id="c-message"
-                name="message"
-                className={[styles.input, styles.textarea].join(' ')}
-                placeholder="Write your message here..."
-                value={form.message}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <Button variant="primary" size="lg" type="submit">Send Message</Button>
-          </form>
+              <Button variant="primary" size="lg" type="submit" disabled={status === 'sending'}>
+                {status === 'sending' ? 'Sending…' : 'Send Message'}
+              </Button>
+            </form>
+          )}
         </FadeInUp>
 
         <FadeInUp delay={0.35}>
