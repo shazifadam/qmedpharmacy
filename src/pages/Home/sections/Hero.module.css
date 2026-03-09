@@ -100,20 +100,25 @@
     font-size: clamp(2.25rem, 7vw, 3rem);
   }
 
-  /* buttons: side-by-side, each filling half the width */
+  /* buttons: stacked full-width, Partner With Us on top */
   .actions {
-    flex-wrap: nowrap;
+    flex-direction: column;
     width: 100%;
     gap: var(--space-3);
   }
 
   .actions > a {
-    flex: 1;
+    width: 100%;
     display: flex;
   }
 
+  /* Partner With Us is the second link in DOM — pull it to top */
+  .actions > a:last-child {
+    order: -1;
+  }
+
   .actions > a > button {
-    flex: 1;
+    width: 100%;
     justify-content: center;
   }
 }
