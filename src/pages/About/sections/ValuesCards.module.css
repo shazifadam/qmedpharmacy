@@ -9,6 +9,7 @@
 }
 
 .heading {
+  margin-top: var(--stack-md);
   margin-bottom: var(--stack-xl);
 }
 
