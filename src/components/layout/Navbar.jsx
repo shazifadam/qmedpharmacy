@@ -28,7 +28,7 @@ export default function Navbar() {
       <header className={styles.wrap}>
         <div className={styles.navbar}>
           <NavLink to="/" className={styles.logo} onClick={close}>
-            <img src={logoNavbar} alt="Q Med Pharmacy" className={styles.logoImg} />
+            <img src={logoNavbar} alt="QMED Pharmacy" className={styles.logoImg} />
           </NavLink>
 
           {/* Desktop nav */}

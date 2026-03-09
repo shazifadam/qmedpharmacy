@@ -13,7 +13,7 @@ export default function Overview() {
         </FadeInUp>
         <FadeInUp delay={0.2}>
           <p className={styles.body}>
-            Q Med Pharmacy is eager to collaborate with partners to introduce new
+            QMED Pharmacy is eager to collaborate with partners to introduce new
             and innovative medications, expand access to high-quality pharmaceutical
             products, and strengthen healthcare supply within the Maldives. We are
             committed to building long-term strategic partnerships that benefit both

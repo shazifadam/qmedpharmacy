@@ -9,7 +9,7 @@ export default function Footer() {
       {/* ── Dark columns ── */}
       <div className={styles.columns}>
         <div className={styles.brandCol}>
-          <img src={logoFooter} alt="Q Med Pharmacy" className={styles.logoImg} />
+          <img src={logoFooter} alt="QMED Pharmacy" className={styles.logoImg} />
           <p className={styles.tagline}>Quality Medicines. Trusted Supply. Nationwide.</p>
         </div>
 

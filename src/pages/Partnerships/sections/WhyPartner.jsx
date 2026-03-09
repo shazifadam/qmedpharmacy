@@ -35,7 +35,7 @@ export default function WhyPartner() {
             <span className="text-overline">Why Choose Us</span>
           </FadeInUp>
           <FadeInUp delay={0.1}>
-            <h2 className={styles.heading}>Why Choose Q Med Pharmacy as Your Partner?</h2>
+            <h2 className={styles.heading}>Why Choose QMED Pharmacy as Your Partner?</h2>
           </FadeInUp>
 
           <StaggerChildren className={styles.list}>

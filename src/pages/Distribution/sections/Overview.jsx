@@ -13,7 +13,7 @@ export default function Overview() {
         </FadeInUp>
         <FadeInUp delay={0.2}>
           <p className={styles.body}>
-            Q Med Pharmacy has the capacity to distribute pharmaceutical products
+            QMED Pharmacy has the capacity to distribute pharmaceutical products
             throughout the Maldives, ensuring that medications reach healthcare
             facilities and pharmacies efficiently. Our distribution network allows
             us to maintain a reliable supply chain that meets regulatory standards

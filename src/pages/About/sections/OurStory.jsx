@@ -13,7 +13,7 @@ export default function OurStory() {
         </FadeInUp>
         <FadeInUp delay={0.2}>
           <p className={styles.body}>
-            Q Med Pharmacy was established in 2019 with the vision of improving
+            QMED Pharmacy was established in 2019 with the vision of improving
             access to quality medications and healthcare products across the Maldives.
             Since our inception, we have focused on providing reliable pharmaceutical
             supply, professional service, and trusted partnerships within the
@@ -22,7 +22,7 @@ export default function OurStory() {
         </FadeInUp>
         <FadeInUp delay={0.3}>
           <p className={styles.body}>
-            Located in the Maldives, Q Med Pharmacy is committed to supporting
+            Located in the Maldives, QMED Pharmacy is committed to supporting
             healthcare providers, clinics, hospitals, and patients by ensuring the
             availability of safe, effective, and high-quality medicines.
           </p>

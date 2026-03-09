@@ -6,7 +6,7 @@ const details = [
   {
     icon: '📍',
     label: 'Our Location',
-    primary: 'Q Med Pharmacy',
+    primary: 'QMED Pharmacy',
     secondary: 'Malé, Republic of Maldives',
     note: null,
   },

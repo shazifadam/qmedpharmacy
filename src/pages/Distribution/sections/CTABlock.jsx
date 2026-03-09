@@ -14,7 +14,7 @@ export default function CTABlock() {
         </FadeInUp>
         <FadeInUp delay={0.15}>
           <p className={styles.subtext}>
-            Get in touch with our team to discuss how Q Med Pharmacy can support
+            Get in touch with our team to discuss how QMED Pharmacy can support
             your healthcare facility's pharmaceutical needs.
           </p>
         </FadeInUp>

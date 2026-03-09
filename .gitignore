@@ -3,3 +3,6 @@ dist
 .DS_Store
 *.local
 .claude/
+
+# Local Netlify folder
+.netlify

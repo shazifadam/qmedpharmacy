@@ -95,7 +95,7 @@ export default function InquiryForm() {
 
         <FadeInUp delay={0.35}>
           <p className={styles.bottomNote}>
-            Q Med Pharmacy is committed to responding to all inquiries promptly and professionally.
+            QMED Pharmacy is committed to responding to all inquiries promptly and professionally.
           </p>
         </FadeInUp>
       </div>

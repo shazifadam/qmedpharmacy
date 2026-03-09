@@ -28,7 +28,7 @@ export default function InquiryForm() {
         </FadeInUp>
         <FadeInUp delay={0.2}>
           <p className={styles.subtext}>
-            Reach out to explore how Q Med Pharmacy can support your entry into the Maldives.
+            Reach out to explore how QMED Pharmacy can support your entry into the Maldives.
           </p>
         </FadeInUp>
 

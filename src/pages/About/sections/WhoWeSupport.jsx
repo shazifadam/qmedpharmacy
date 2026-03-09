@@ -25,7 +25,7 @@ export default function WhoWeSupport() {
         </FadeInUp>
         <FadeInUp delay={0.2}>
           <p className={styles.lead}>
-            Q Med Pharmacy is committed to supporting a wide range of healthcare
+            QMED Pharmacy is committed to supporting a wide range of healthcare
             stakeholders across the Maldives.
           </p>
         </FadeInUp>
