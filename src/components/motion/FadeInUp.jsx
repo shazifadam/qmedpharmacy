@@ -4,7 +4,7 @@ import { useRef } from 'react'
 export default function FadeInUp({
   children,
   delay = 0,
-  duration = 0.6,
+  duration = 0.8,
   yOffset = 24,
   className
 }) {
@@ -20,7 +20,7 @@ export default function FadeInUp({
       transition={{
         duration,
         delay,
-        ease: [0.16, 1, 0.3, 1]
+        ease: [0.4, 0, 0.2, 1]
       }}
     >
       {children}
