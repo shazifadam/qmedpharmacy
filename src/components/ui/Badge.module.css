@@ -1,0 +1,27 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: var(--font-weight-body);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+}
+
+.default {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.muted {
+  background-color: var(--grey-100);
+  color: var(--grey-600);
+}

@@ -1,0 +1,24 @@
+.section {
+  background-color: var(--color-white);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: var(--stack-xl);
+}
+
+.grid {
+  align-items: stretch;
+}
+
+.cardIconImg {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
+}

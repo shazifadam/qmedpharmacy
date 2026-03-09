@@ -1,0 +1,21 @@
+.section {
+  background-color: var(--color-white);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-md);
+}
+
+.heading {
+  margin: 0;
+}
+
+.body {
+  color: var(--color-subheading);
+  line-height: var(--leading-loose);
+}

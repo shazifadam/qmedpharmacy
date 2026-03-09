@@ -1,0 +1,132 @@
+:root {
+  /* ── Core Colors ── */
+  --color-primary:       #3C8BC8;
+  --color-primary-hover: #2f75ae;
+  --color-primary-light: #e8f3fb;
+  --color-surface:       #F7F5F2;
+  --color-body-text:     #1E1919;
+  --color-white:         #FFFFFF;
+
+  /* ── Grey Scale ── */
+  --grey-900: #1A1918;
+  --grey-850: #242321;
+  --grey-800: #2D2B29;
+  --grey-750: #393633;
+  --grey-700: #44403D;
+  --grey-650: #4F4A46;
+  --grey-600: #5B5650;
+  --grey-550: #67615A;
+  --grey-500: #8C8279;
+  --grey-450: #978F86;
+  --grey-400: #A49B93;
+  --grey-350: #AFA8A0;
+  --grey-300: #BBB5AE;
+  --grey-250: #C7C1BB;
+  --grey-200: #D3CEC9;
+  --grey-150: #DFDCD8;
+  --grey-100: #DFDCD8;
+  --grey-50:  #F7F6F5;
+
+  /* ── Semantic Aliases ── */
+  --color-heading:       var(--grey-750);
+  --color-subheading:    var(--grey-600);
+  --color-muted:         var(--grey-450);
+  --color-border:        var(--grey-150);
+  --color-border-strong: var(--grey-250);
+  --color-bg-section:    var(--color-surface);
+  --color-bg-card:       var(--color-white);
+  --color-bg-dark:       var(--grey-850);
+
+  /* ── Font Families ── */
+  --font-heading: 'Hedvig Letters Serif', Georgia, serif;
+  --font-body:    'General Sans', system-ui, sans-serif;
+
+  /* ── Font Weights ── */
+  --font-weight-heading: 400;
+  --font-weight-body:    500;
+
+  /* ── Font Sizes ── */
+  --text-display:  clamp(3rem, 5vw, 4.5rem);
+  --text-h1:       clamp(2.25rem, 4vw, 3.5rem);
+  --text-h2:       clamp(1.75rem, 3vw, 2.5rem);
+  --text-h3:       clamp(1.375rem, 2vw, 1.875rem);
+  --text-h4:       clamp(1.125rem, 1.5vw, 1.375rem);
+  --text-overline: 0.75rem;
+  --text-body-lg:  1.125rem;
+  --text-body:     1rem;
+  --text-body-sm:  0.9375rem;
+  --text-caption:  0.8125rem;
+  --text-micro:    0.75rem;
+
+  /* ── Line Heights ── */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+  --leading-loose:  1.75;
+
+  /* ── Letter Spacing ── */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.05em;
+  --tracking-widest:   0.12em;
+
+  /* ── Spacing ── */
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  /* ── Semantic Spacing ── */
+  --section-padding-y:    var(--space-24);
+  --section-padding-y-lg: var(--space-32);
+  --section-padding-x:    var(--space-6);
+  --container-max:        1200px;
+  --container-padding:    var(--space-6);
+
+  --card-padding:  var(--space-8);
+  --card-gap:      var(--space-6);
+  --card-gap-lg:   var(--space-8);
+
+  --stack-xs: var(--space-2);
+  --stack-sm: var(--space-4);
+  --stack-md: var(--space-6);
+  --stack-lg: var(--space-10);
+  --stack-xl: var(--space-16);
+
+  /* ── Border Radius ── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-2xl:  40px;
+  --radius-pill: 9999px;
+  --radius-full: 50%;
+
+  /* ── Shadows ── */
+  --shadow-xs:  0 1px 3px rgba(30, 25, 25, 0.06);
+  --shadow-sm:  0 2px 8px rgba(30, 25, 25, 0.08);
+  --shadow-md:  0 4px 16px rgba(30, 25, 25, 0.10);
+  --shadow-lg:  0 8px 32px rgba(30, 25, 25, 0.12);
+  --shadow-xl:  0 16px 48px rgba(30, 25, 25, 0.14);
+
+  --shadow-card:       var(--shadow-sm);
+  --shadow-card-hover: var(--shadow-lg);
+
+  /* ── Animation ── */
+  --anim-fast:   0.2s;
+  --anim-normal: 0.4s;
+  --anim-slow:   0.6s;
+  --anim-slower: 0.8s;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+}

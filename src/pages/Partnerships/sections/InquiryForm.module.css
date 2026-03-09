@@ -1,0 +1,82 @@
+.section {
+  background-color: var(--color-surface);
+  padding: var(--section-padding-y) var(--section-padding-x);
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-md);
+}
+
+.heading {
+  margin: 0;
+}
+
+.subtext {
+  color: var(--color-subheading);
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-loose);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-top: var(--stack-md);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: var(--font-weight-body);
+  color: var(--color-subheading);
+  letter-spacing: 0.02em;
+}
+
+.input {
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--color-body-text);
+  background-color: var(--color-white);
+  border: 1.5px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  width: 100%;
+  outline: none;
+  transition: border-color var(--anim-fast) ease, box-shadow var(--anim-fast) ease;
+}
+
+.input::placeholder {
+  color: var(--color-muted);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(60, 139, 200, 0.12);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}

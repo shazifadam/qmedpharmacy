@@ -1,0 +1,26 @@
+.hero {
+  background-color: var(--color-surface);
+  padding: var(--section-padding-y-lg) var(--section-padding-x);
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--stack-md);
+}
+
+.headline {
+  margin: 0;
+}
+
+.subtext {
+  max-width: 48ch;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-20) var(--space-4);
+  }
+}
