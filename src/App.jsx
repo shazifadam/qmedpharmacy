@@ -8,6 +8,7 @@ import About        from '@/pages/About'
 import Distribution from '@/pages/Distribution'
 import Partnerships from '@/pages/Partnerships'
 import Contact      from '@/pages/Contact'
+import NotFound     from '@/pages/NotFound'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -30,6 +31,7 @@ export default function App() {
             <Route path="/distribution"  element={<Distribution />} />
             <Route path="/partnerships"  element={<Partnerships />} />
             <Route path="/contact"       element={<Contact />} />
+            <Route path="*"              element={<NotFound />} />
           </Routes>
         </AnimatePresence>
       </main>
