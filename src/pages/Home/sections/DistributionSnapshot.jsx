@@ -31,7 +31,7 @@ export default function DistributionSnapshot() {
             </FadeInUp>
           </div>
 
-          <FadeInUp delay={0.15}>
+          <FadeInUp delay={0.15} className={styles.imageWrapper}>
             <div className={styles.imageHolder}>
               <img
                 src={distImg}
