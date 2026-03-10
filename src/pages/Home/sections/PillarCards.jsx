@@ -36,7 +36,7 @@ export default function PillarCards() {
     <section className={styles.section}>
       <div className={styles.container}>
         <FadeInUp delay={0}>
-          <h2 className={styles.heading}>How We Serve Healthcare in the Maldives</h2>
+          <h2 className={styles.heading}>How We Serve Healthcare in <br />the Maldives</h2>
         </FadeInUp>
 
         <StaggerChildren className={['grid-3', styles.grid].join(' ')}>
