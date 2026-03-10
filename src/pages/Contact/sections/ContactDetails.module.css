@@ -17,9 +17,8 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--card-gap);
-  max-width: 720px;
 }
 
 .detailCard {
@@ -35,6 +34,17 @@
 
 .detailCard:hover {
   box-shadow: var(--shadow-sm);
+}
+
+.clickable {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.clickable:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary);
 }
 
 .icon {
@@ -79,5 +89,11 @@
 @media (max-width: 768px) {
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
