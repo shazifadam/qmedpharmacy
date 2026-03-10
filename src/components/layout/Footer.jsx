@@ -31,10 +31,14 @@ export default function Footer() {
               <span className={styles.contactLabel}>Location</span>
               Malé, Republic of Maldives
             </p>
-            <p className={styles.contactItem}>
+            <a href="mailto:info@qmedpharmacy.mv" className={styles.contactItem}>
               <span className={styles.contactLabel}>Email</span>
-              info@qmedpharmacy.com
-            </p>
+              info@qmedpharmacy.mv
+            </a>
+            <a href="tel:+9607777777" className={styles.contactItem}>
+              <span className={styles.contactLabel}>Contact No.</span>
+              +960 777 7777
+            </a>
           </div>
         </div>
       </div>
