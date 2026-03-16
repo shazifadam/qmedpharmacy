@@ -11,8 +11,16 @@ import Contact      from '@/pages/Contact'
 import NotFound     from '@/pages/NotFound'
 
 function ScrollToTop() {
-  const { pathname } = useLocation()
-  useEffect(() => { window.scrollTo({ top: 0, behavior: 'instant' }) }, [pathname])
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (hash) {
+      setTimeout(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: 'smooth' })
+      }, 600)
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' })
+    }
+  }, [pathname, hash])
   return null
 }
 

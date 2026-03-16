@@ -19,10 +19,10 @@ const details = [
   },
   {
     label: 'Call Us',
-    primary: '+960 993 9797',
+    primary: '+970 770 0665',
     secondary: null,
     note: 'We are here to answer your call.',
-    href: 'tel:+9609939797',
+    href: 'tel:+9707700665',
   },
 ]
 

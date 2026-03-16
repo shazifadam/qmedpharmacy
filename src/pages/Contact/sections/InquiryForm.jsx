@@ -28,7 +28,7 @@ export default function InquiryForm() {
   }
 
   return (
-    <section className={styles.section}>
+    <section id="inquiry-form" className={styles.section}>
       <div className={styles.container}>
         <FadeInUp delay={0}>
           <span className="text-overline">Quick Inquiry</span>

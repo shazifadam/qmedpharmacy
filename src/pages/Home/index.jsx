@@ -1,6 +1,7 @@
 import SEO from '@/components/seo/SEO'
 import PageTransition from '@/components/motion/PageTransition'
 import Hero from './sections/Hero'
+import LogoTicker from '@/components/ui/LogoTicker'
 import PillarCards from './sections/PillarCards'
 import DistributionSnapshot from './sections/DistributionSnapshot'
 import PartnershipSnapshot from './sections/PartnershipSnapshot'
@@ -19,6 +20,7 @@ export default function Home() {
         pageType="WebPage"
       />
       <Hero />
+      <LogoTicker />
       <PillarCards />
       <DistributionSnapshot />
       <PartnershipSnapshot />

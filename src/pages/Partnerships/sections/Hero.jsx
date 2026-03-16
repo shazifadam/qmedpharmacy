@@ -40,7 +40,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
         >
-          <Link to="#inquiry">
+          <Link to="/contact#inquiry-form">
             <Button variant="primary" size="lg">Send an Inquiry</Button>
           </Link>
         </motion.div>
