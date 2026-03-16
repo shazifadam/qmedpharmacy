@@ -35,9 +35,9 @@ export default function Footer() {
               <span className={styles.contactLabel}>Email</span>
               info@qmedpharmacy.mv
             </a>
-            <a href="tel:+9607777777" className={styles.contactItem}>
+            <a href="tel:+9609939797" className={styles.contactItem}>
               <span className={styles.contactLabel}>Contact No.</span>
-              +960 777 7777
+              +960 993 9797
             </a>
           </div>
         </div>
